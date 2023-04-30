@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: userdb-deployment
+
+  labels:
+    app: node-16
+
+spec:
+  replicas: 5
+
+  selector:
+    matchLabels:
+      app: node-16
+
+  template:
+    metadata:
+      labels:
+        app: node-16
+
+    spec:
+      containers:
+        - name: node
+
+          image: kaviuln/image_7.1
+
+          ports:
+            - containerPort: 1334

@@ -1,0 +1,15 @@
+{
+  "name": "s",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Task_2.1_script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Task_2.1_script.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
