@@ -1,0 +1,19 @@
+apiVersion: v1
+
+kind: Service
+
+metadata:
+  name: userdb-service
+
+  labels:
+    app: node-16
+
+spec:
+  selector:
+    app: node-16
+  type: NodePort
+  ports:
+    - name: node-16
+      port: 8000
+      protocol: TCP
+      targetPort: 1334
