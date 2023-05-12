@@ -14,6 +14,6 @@ spec:
   type: NodePort
   ports:
     - name: node-16
-      port: 8000
+      port: 80
       protocol: TCP
       targetPort: 1334
